@@ -3,6 +3,7 @@
 #include <time.h> 
 #include<conio.h>
 #include"quiz.h"
+#include"quiz_questions.h"
 int totalq=3;
 
 int main() 
