@@ -4,10 +4,14 @@
 #include<conio.h>
 #include"quiz.h"
 #include"quiz_questions.h"
+#include"quiz_ui.h"
 int totalq=3,time_limit=5;
 
 int main() 
 { 
+system("color 80");
+quizStart();
+
  time_t seconds; 
 	char ans[totalq];
     int num,i,random_no_storage[totalq],time_taken[totalq]; 
