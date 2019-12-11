@@ -46,6 +46,8 @@ void callingQuestions(int random_no_storage[],char ans[],int time_taken[],int ti
         			break;
             case 3: questionNo3(i, ans, time_taken,time_limit);
         			break;
+        	case 4: questionNo4(i, ans, time_taken,time_limit);
+        			break;
 		} 
     }
 }

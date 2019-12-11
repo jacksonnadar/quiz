@@ -74,3 +74,7 @@ void questionNo3(int i,char ans[],int time_taken[],int time_limit){
 	
      mainWorking(i,ans,time_taken,time_limit,'b','B',"MS-DOS developed in","1991","1984","1971","1961","1984");
 }
+void questionNo4(int i,char ans[],int time_taken[],int time_limit){
+	
+     mainWorking(i,ans,time_taken,time_limit,'c','C',"Maximum length of DOS command using any optional parameter is","26 characters"," 87 characters","127 characters","None of above","127 characters");
+ }
