@@ -1,6 +1,23 @@
-void mainWorking(int i,char ans[],int time_taken[],int time_limit,char correct_ans_small,char correct_ans_caps,char correct_ans[]){
-	int t=0;
+void mainWorking(int i,char ans[],int time_taken[],
+int time_limit,char correct_ans_small,char correct_ans_caps,char question[],
+char option_a[],char option_b[],char option_c[],char option_d[],char correct_ans[]){
+	int t=0,max_char=10,x;
     char user_ans;
+    
+    printf("%i:%s:\n\n",i+1,question);
+    printf("A.%s",option_a);
+    for(x=0;x<=10-strlen(option_a);x++){
+    	printf(" ");
+	}
+	printf("\t\t\t");
+    printf("B.%s\n",option_b);
+    printf("C.%s",option_c);
+    for(x=0;x<=10-strlen(option_c);x++){
+    	printf(" ");
+	}
+	printf("\t\t\t");
+    printf("D.%s\n",option_d);
+    
 
 	while(!kbhit())
 	{
@@ -46,20 +63,14 @@ void mainWorking(int i,char ans[],int time_taken[],int time_limit,char correct_a
 
 
 void questionNo1(int i,char ans[],int time_taken[],int time_limit){
-    printf("%i:this is one:\n",i+1);
-    printf("A.Silicon \t\t\tB.lead\n");
-    printf("C.Chromium\t\t\tD.Gold\n");
-    mainWorking(i,ans,time_taken,time_limit,'a','A',"Lead");
+   
+    mainWorking(i,ans,time_taken,time_limit,'a','A',"this is one","Lead","Silicon","Chromium","Gold","Lead");
 }
 void questionNo2(int i,char ans[],int time_taken[],int time_limit){
-    printf("%i:this is two:\n",i+1);
-    printf("A.Lead    \t\t\tB.Silicon\n");
-    printf("C.Chromium\t\t\tD.Gold\n"); 
-    mainWorking(i,ans,time_taken,time_limit,'b','B',"Silicon");
+    
+    mainWorking(i,ans,time_taken,time_limit,'b','B',"this is two","ad","Silicon","Chromium","Gold","silicon");
 }
 void questionNo3(int i,char ans[],int time_taken[],int time_limit){
-    printf("%i:this is three:\n",i+1);
-    printf("A.Lead    \t\t\tB.Silicon\n");
-    printf("C.Chromium\t\t\tD.Gold\n");
-    mainWorking(i,ans,time_taken,time_limit,'c','C',"Chromium");
+	
+     mainWorking(i,ans,time_taken,time_limit,'c','C',"this is three","Lead","Silicon","Comium","Gold","Chromium");
 }
