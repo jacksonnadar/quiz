@@ -1,18 +1,18 @@
 void mainWorking(int i,char ans[],int time_taken[],
 int time_limit,char correct_ans_small,char correct_ans_caps,char question[],
 char option_a[],char option_b[],char option_c[],char option_d[],char correct_ans[]){
-	int t=0,max_char=10,x;
+	int t=0,max_char=20,x;
     char user_ans;
     
     printf("%i:%s:\n\n",i+1,question);
     printf("A.%s",option_a);
-    for(x=0;x<=10-strlen(option_a);x++){
+    for(x=0;x<=max_char-strlen(option_a);x++){
     	printf(" ");
 	}
 	printf("\t\t\t");
     printf("B.%s\n",option_b);
     printf("C.%s",option_c);
-    for(x=0;x<=10-strlen(option_c);x++){
+    for(x=0;x<=max_char-strlen(option_c);x++){
     	printf(" ");
 	}
 	printf("\t\t\t");
@@ -64,13 +64,13 @@ char option_a[],char option_b[],char option_c[],char option_d[],char correct_ans
 
 void questionNo1(int i,char ans[],int time_taken[],int time_limit){
    
-    mainWorking(i,ans,time_taken,time_limit,'a','A',"this is one","Lead","Silicon","Chromium","Gold","Lead");
+    mainWorking(i,ans,time_taken,time_limit,'c','C',"An entire path name, consisting of several sub-directory names can contain upto","13 character","36 character","63 character","53 character","63 character");
 }
 void questionNo2(int i,char ans[],int time_taken[],int time_limit){
     
-    mainWorking(i,ans,time_taken,time_limit,'b','B',"this is two","ad","Silicon","Chromium","Gold","silicon");
+    mainWorking(i,ans,time_taken,time_limit,'c','C',"In which year the first operating system was developed","1910","1940","1950","1980","1950");
 }
 void questionNo3(int i,char ans[],int time_taken[],int time_limit){
 	
-     mainWorking(i,ans,time_taken,time_limit,'c','C',"this is three","Lead","Silicon","Comium","Gold","Chromium");
+     mainWorking(i,ans,time_taken,time_limit,'b','B',"MS-DOS developed in","1991","1984","1971","1961","1984");
 }
