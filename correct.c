@@ -5,11 +5,11 @@
 #include"quiz.h"
 #include"quiz_questions.h"
 #include"quiz_ui.h"
-int totalq=4,time_limit=5;
+int totalq=15,time_limit=5;
 
 int main() 
 { 
-system("color 80");
+system("color f0");
 quizStart();
 
  time_t seconds; 
@@ -18,10 +18,12 @@ quizStart();
   
    storingRandom(random_no_storage, totalq );
 
-   callingQuestions(random_no_storage, ans, time_taken, time_limit,totalq);
+  int question_no = callingQuestions(random_no_storage, ans, time_taken, time_limit,totalq);
    
-  for(i=0;i<3;i++){
-  	printf("%c   %i\n",ans[i],time_taken[i]);
-  }
+   quizResult(time_taken, ans,question_no);
+   
+//  for(i=0;i<3;i++){
+//  	printf("%c   %i\n",ans[i],time_taken[i]);
+//  }
     return 0; 
 } 
