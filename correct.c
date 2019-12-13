@@ -5,7 +5,7 @@
 #include"quiz.h"
 #include"quiz_questions.h"
 #include"quiz_ui.h"
-int totalq=15,time_limit=5;
+int totalq=50,time_limit=5;
 
 int main() 
 { 
